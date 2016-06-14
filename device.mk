@@ -415,4 +415,8 @@ ifeq ($(TARGET_BUILD_VARIANT),user)
   # don't check verity on vendor partition as we don't compile it with the boot and system image
   # PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor
   $(call inherit-product, build/target/product/verity.mk)
+  
+  # Gello
+  PRODUCT_PACKAGES += \
+  	  Gello
 endif
